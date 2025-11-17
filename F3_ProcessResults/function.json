@@ -1,0 +1,9 @@
+{
+  "bindings": [
+    {
+      "name": "AggregateInput",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}

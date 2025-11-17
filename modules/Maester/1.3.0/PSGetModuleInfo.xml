@@ -1,0 +1,651 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Maester</S>
+      <S N="Version">1.3.0</S>
+      <S N="Type">Module</S>
+      <S N="Description">Maester is an automation framework to assess and monitor your Microsoft 365 security configuration.</S>
+      <S N="Author">Maester Team</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>FBader</S>
+          <S>merill</S>
+          <S>Thomas.Naunheim</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">Maester Team. All rights reserved.</S>
+      <DT N="PublishedDate">2025-06-23T23:44:51+05:30</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/maester365/maester/blob/main/LICENSE</URI>
+      <URI N="ProjectUri">https://maester.dev/</URI>
+      <URI N="IconUri">https://maester.dev/img/logo.svg</URI>
+      <Obj N="Tags" RefId="2">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Microsoft</S>
+          <S>365</S>
+          <S>Cloud</S>
+          <S>Test</S>
+          <S>Pester</S>
+          <S>Entra</S>
+          <S>AzureAD</S>
+          <S>Automation</S>
+          <S>Regression</S>
+          <S>DevOps</S>
+          <S>EntraID</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="3">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-MtTestResultDetail</S>
+                <S>Clear-MtDnsCache</S>
+                <S>Clear-MtExoCache</S>
+                <S>Clear-MtGraphCache</S>
+                <S>Compare-MtTestResult</S>
+                <S>Connect-Maester</S>
+                <S>Convert-MtResultsToFlatObject</S>
+                <S>ConvertFrom-MailAuthenticationRecordDkim</S>
+                <S>ConvertFrom-MailAuthenticationRecordDmarc</S>
+                <S>ConvertFrom-MailAuthenticationRecordMx</S>
+                <S>ConvertFrom-MailAuthenticationRecordSpf</S>
+                <S>Disconnect-Maester</S>
+                <S>Get-MailAuthenticationRecord</S>
+                <S>Get-MtAdminPortalUrl</S>
+                <S>Get-MtAuthenticationMethodPolicyConfig</S>
+                <S>Get-MtConditionalAccessPolicy</S>
+                <S>Get-MtExo</S>
+                <S>Get-MtGraphScope</S>
+                <S>Get-MtGroupMember</S>
+                <S>Get-MtHtmlReport</S>
+                <S>Get-MtLicenseInformation</S>
+                <S>Get-MtRole</S>
+                <S>Get-MtRoleMember</S>
+                <S>Get-MtSession</S>
+                <S>Get-MtUser</S>
+                <S>Get-MtUserAuthenticationMethod</S>
+                <S>Get-MtUserAuthenticationMethodInfoByType</S>
+                <S>Install-MaesterTests</S>
+                <S>Invoke-Maester</S>
+                <S>Invoke-MtAzureRequest</S>
+                <S>Invoke-MtGraphRequest</S>
+                <S>Resolve-SPFRecord</S>
+                <S>Send-MtMail</S>
+                <S>Send-MtTeamsMessage</S>
+                <S>Test-MtAppManagementPolicyEnabled</S>
+                <S>Test-MtAppRegistrationsWithSecrets</S>
+                <S>Test-MtCaAllAppsExists</S>
+                <S>Test-MtCaApplicationEnforcedRestriction</S>
+                <S>Test-MtCaBlockLegacyExchangeActiveSyncAuthentication</S>
+                <S>Test-MtCaBlockLegacyOtherAuthentication</S>
+                <S>Test-MtCaBlockUnknownOrUnsupportedDevicePlatform</S>
+                <S>Test-MtCaDeviceCodeFlow</S>
+                <S>Test-MtCaDeviceComplianceAdminsExists</S>
+                <S>Test-MtCaDeviceComplianceExists</S>
+                <S>Test-MtCaEmergencyAccessExists</S>
+                <S>Test-MtCaEnforceNonPersistentBrowserSession</S>
+                <S>Test-MtCaEnforceSignInFrequency</S>
+                <S>Test-MtCaExclusionForDirectorySyncAccount</S>
+                <S>Test-MtCaGap</S>
+                <S>Test-MtCaGroupsRestricted</S>
+                <S>Test-MtCaLicenseUtilization</S>
+                <S>Test-MtCaMfaForAdmin</S>
+                <S>Test-MtCaMfaForAdminManagement</S>
+                <S>Test-MtCaMfaForAllUsers</S>
+                <S>Test-MtCaMfaForGuest</S>
+                <S>Test-MtCaMfaForRiskySignIn</S>
+                <S>Test-MtCaMisconfiguredIDProtection</S>
+                <S>Test-MtCaReferencedGroupsExist</S>
+                <S>Test-MtCaRequirePasswordChangeForHighUserRisk</S>
+                <S>Test-MtCaSecureSecurityInfoRegistration</S>
+                <S>Test-MtCaWIFBlockLegacyAuthentication</S>
+                <S>Test-MtCis365PublicGroup</S>
+                <S>Test-MtCisaActivationNotification</S>
+                <S>Test-MtCisaAntiSpamAllowList</S>
+                <S>Test-MtCisaAntiSpamSafeList</S>
+                <S>Test-MtCisaAppAdminConsent</S>
+                <S>Test-MtCisaAppGroupOwnerConsent</S>
+                <S>Test-MtCisaAppRegistration</S>
+                <S>Test-MtCisaAppUserConsent</S>
+                <S>Test-MtCisaAssignmentNotification</S>
+                <S>Test-MtCisaAttachmentFileType</S>
+                <S>Test-MtCisaAttachmentFilter</S>
+                <S>Test-MtCisaAuditLog</S>
+                <S>Test-MtCisaAuditLogPremium</S>
+                <S>Test-MtCisaAuditLogRetention</S>
+                <S>Test-MtCisaAuthenticatorContext</S>
+                <S>Test-MtCisaAutoExternalForwarding</S>
+                <S>Test-MtCisaBlockExecutable</S>
+                <S>Test-MtCisaBlockHighRiskSignIn</S>
+                <S>Test-MtCisaBlockHighRiskUser</S>
+                <S>Test-MtCisaBlockLegacyAuth</S>
+                <S>Test-MtCisaCalendarSharing</S>
+                <S>Test-MtCisaCloudGlobalAdmin</S>
+                <S>Test-MtCisaContactSharing</S>
+                <S>Test-MtCisaCrossTenantInboundDefault</S>
+                <S>Test-MtCisaDiagnosticSettings</S>
+                <S>Test-MtCisaDkim</S>
+                <S>Test-MtCisaDlp</S>
+                <S>Test-MtCisaDlpAlternate</S>
+                <S>Test-MtCisaDlpBaselineRule</S>
+                <S>Test-MtCisaDlpPii</S>
+                <S>Test-MtCisaDmarcAggregateCisa</S>
+                <S>Test-MtCisaDmarcRecordExist</S>
+                <S>Test-MtCisaDmarcRecordReject</S>
+                <S>Test-MtCisaDmarcReport</S>
+                <S>Test-MtCisaEmailFilterAlternative</S>
+                <S>Test-MtCisaExoAlert</S>
+                <S>Test-MtCisaExoAlertSiem</S>
+                <S>Test-MtCisaExternalSenderWarning</S>
+                <S>Test-MtCisaGlobalAdminCount</S>
+                <S>Test-MtCisaGlobalAdminRatio</S>
+                <S>Test-MtCisaGuestInvitation</S>
+                <S>Test-MtCisaGuestUserAccess</S>
+                <S>Test-MtCisaImpersonation</S>
+                <S>Test-MtCisaImpersonationTip</S>
+                <S>Test-MtCisaMailboxAuditing</S>
+                <S>Test-MtCisaMailboxIntelligence</S>
+                <S>Test-MtCisaMalwareAction</S>
+                <S>Test-MtCisaMalwareZap</S>
+                <S>Test-MtCisaManagedDevice</S>
+                <S>Test-MtCisaManagedDeviceRegistration</S>
+                <S>Test-MtCisaMethodsMigration</S>
+                <S>Test-MtCisaMfa</S>
+                <S>Test-MtCisaNotifyHighRisk</S>
+                <S>Test-MtCisaPasswordExpiration</S>
+                <S>Test-MtCisaPermanentRoleAssignment</S>
+                <S>Test-MtCisaPhishResistant</S>
+                <S>Test-MtCisaPrivilegedPhishResistant</S>
+                <S>Test-MtCisaRequireActivationApproval</S>
+                <S>Test-MtCisaSafeLink</S>
+                <S>Test-MtCisaSafeLinkClickTracking</S>
+                <S>Test-MtCisaSafeLinkDownloadScan</S>
+                <S>Test-MtCisaSmtpAuthentication</S>
+                <S>Test-MtCisaSpamAction</S>
+                <S>Test-MtCisaSpamAlternative</S>
+                <S>Test-MtCisaSpamBypass</S>
+                <S>Test-MtCisaSpamFilter</S>
+                <S>Test-MtCisaSpfDirective</S>
+                <S>Test-MtCisaSpfRestriction</S>
+                <S>Test-MtCisaSpoSharing</S>
+                <S>Test-MtCisaSpoSharingAllowedDomain</S>
+                <S>Test-MtCisAttachmentFilter</S>
+                <S>Test-MtCisAttachmentFilterComprehensive</S>
+                <S>Test-MtCisAuditLogSearch</S>
+                <S>Test-MtCisaUnmanagedRoleAssignment</S>
+                <S>Test-MtCisaWeakFactor</S>
+                <S>Test-MtCisCalendarSharing</S>
+                <S>Test-MtCisCloudAdmin</S>
+                <S>Test-MtCisCommunicateWithUnmanagedTeamsUsers</S>
+                <S>Test-MtCisConnectionFilterSafeList</S>
+                <S>Test-MtCisCustomerLockBox</S>
+                <S>Test-MtCisDkim</S>
+                <S>Test-MtCisGlobalAdminCount</S>
+                <S>Test-MtCisHostedConnectionFilterPolicy</S>
+                <S>Test-MtCisInternalMalwareNotification</S>
+                <S>Test-MtCisOutboundSpamFilterPolicy</S>
+                <S>Test-MtCisPasswordExpiry</S>
+                <S>Test-MtCisSafeAntiPhishingPolicy</S>
+                <S>Test-MtCisSafeAttachment</S>
+                <S>Test-MtCisSafeAttachmentsAtpPolicy</S>
+                <S>Test-MtCisSafeLink</S>
+                <S>Test-MtCisSharedMailboxSignIn</S>
+                <S>Test-MtCisTeamsLobbyBypass</S>
+                <S>Test-MtCisTeamsReportSecurityConcerns</S>
+                <S>Test-MtCisThirdPartyAndCustomApps</S>
+                <S>Test-MtCisThirdPartyFileSharing</S>
+                <S>Test-MtCisZAP</S>
+                <S>Test-MtConditionalAccessWhatIf</S>
+                <S>Test-MtConnection</S>
+                <S>Test-MtDeviceComplianceSettings</S>
+                <S>Test-MtEidscaControl</S>
+                <S>Test-MtGroupCreationRestricted</S>
+                <S>Test-MtHighRiskAppPermissions</S>
+                <S>Test-MtManagedDeviceCleanupSettings</S>
+                <S>Test-MtPimAlertsExists</S>
+                <S>Test-MtPrivPermanentDirectoryRole</S>
+                <S>Test-MtSpExchangeAppAccessPolicy</S>
+                <S>Test-MtTeamsRestrictParticipantGiveRequestControl</S>
+                <S>Test-MtUserAccessAdmin</S>
+                <S>Test-ORCA100</S>
+                <S>Test-ORCA101</S>
+                <S>Test-ORCA102</S>
+                <S>Test-ORCA103</S>
+                <S>Test-ORCA104</S>
+                <S>Test-ORCA105</S>
+                <S>Test-ORCA106</S>
+                <S>Test-ORCA107</S>
+                <S>Test-ORCA108</S>
+                <S>Test-ORCA108_1</S>
+                <S>Test-ORCA109</S>
+                <S>Test-ORCA110</S>
+                <S>Test-ORCA111</S>
+                <S>Test-ORCA112</S>
+                <S>Test-ORCA113</S>
+                <S>Test-ORCA114</S>
+                <S>Test-ORCA115</S>
+                <S>Test-ORCA116</S>
+                <S>Test-ORCA118_1</S>
+                <S>Test-ORCA118_2</S>
+                <S>Test-ORCA118_3</S>
+                <S>Test-ORCA118_4</S>
+                <S>Test-ORCA119</S>
+                <S>Test-ORCA120_malware</S>
+                <S>Test-ORCA120_phish</S>
+                <S>Test-ORCA120_spam</S>
+                <S>Test-ORCA121</S>
+                <S>Test-ORCA123</S>
+                <S>Test-ORCA124</S>
+                <S>Test-ORCA139</S>
+                <S>Test-ORCA140</S>
+                <S>Test-ORCA141</S>
+                <S>Test-ORCA142</S>
+                <S>Test-ORCA143</S>
+                <S>Test-ORCA156</S>
+                <S>Test-ORCA158</S>
+                <S>Test-ORCA179</S>
+                <S>Test-ORCA180</S>
+                <S>Test-ORCA189</S>
+                <S>Test-ORCA189_2</S>
+                <S>Test-ORCA205</S>
+                <S>Test-ORCA220</S>
+                <S>Test-ORCA221</S>
+                <S>Test-ORCA222</S>
+                <S>Test-ORCA223</S>
+                <S>Test-ORCA224</S>
+                <S>Test-ORCA225</S>
+                <S>Test-ORCA226</S>
+                <S>Test-ORCA227</S>
+                <S>Test-ORCA228</S>
+                <S>Test-ORCA229</S>
+                <S>Test-ORCA230</S>
+                <S>Test-ORCA231</S>
+                <S>Test-ORCA232</S>
+                <S>Test-ORCA233</S>
+                <S>Test-ORCA233_1</S>
+                <S>Test-ORCA234</S>
+                <S>Test-ORCA235</S>
+                <S>Test-ORCA236</S>
+                <S>Test-ORCA237</S>
+                <S>Test-ORCA238</S>
+                <S>Test-ORCA239</S>
+                <S>Test-ORCA240</S>
+                <S>Test-ORCA241</S>
+                <S>Test-ORCA242</S>
+                <S>Test-ORCA243</S>
+                <S>Test-ORCA244</S>
+                <S>Update-MaesterTests</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-MtTestResultDetail</S>
+                <S>Clear-MtDnsCache</S>
+                <S>Clear-MtExoCache</S>
+                <S>Clear-MtGraphCache</S>
+                <S>Compare-MtTestResult</S>
+                <S>Connect-Maester</S>
+                <S>Convert-MtResultsToFlatObject</S>
+                <S>ConvertFrom-MailAuthenticationRecordDkim</S>
+                <S>ConvertFrom-MailAuthenticationRecordDmarc</S>
+                <S>ConvertFrom-MailAuthenticationRecordMx</S>
+                <S>ConvertFrom-MailAuthenticationRecordSpf</S>
+                <S>Disconnect-Maester</S>
+                <S>Get-MailAuthenticationRecord</S>
+                <S>Get-MtAdminPortalUrl</S>
+                <S>Get-MtAuthenticationMethodPolicyConfig</S>
+                <S>Get-MtConditionalAccessPolicy</S>
+                <S>Get-MtExo</S>
+                <S>Get-MtGraphScope</S>
+                <S>Get-MtGroupMember</S>
+                <S>Get-MtHtmlReport</S>
+                <S>Get-MtLicenseInformation</S>
+                <S>Get-MtRole</S>
+                <S>Get-MtRoleMember</S>
+                <S>Get-MtSession</S>
+                <S>Get-MtUser</S>
+                <S>Get-MtUserAuthenticationMethod</S>
+                <S>Get-MtUserAuthenticationMethodInfoByType</S>
+                <S>Install-MaesterTests</S>
+                <S>Invoke-Maester</S>
+                <S>Invoke-MtAzureRequest</S>
+                <S>Invoke-MtGraphRequest</S>
+                <S>Resolve-SPFRecord</S>
+                <S>Send-MtMail</S>
+                <S>Send-MtTeamsMessage</S>
+                <S>Test-MtAppManagementPolicyEnabled</S>
+                <S>Test-MtAppRegistrationsWithSecrets</S>
+                <S>Test-MtCaAllAppsExists</S>
+                <S>Test-MtCaApplicationEnforcedRestriction</S>
+                <S>Test-MtCaBlockLegacyExchangeActiveSyncAuthentication</S>
+                <S>Test-MtCaBlockLegacyOtherAuthentication</S>
+                <S>Test-MtCaBlockUnknownOrUnsupportedDevicePlatform</S>
+                <S>Test-MtCaDeviceCodeFlow</S>
+                <S>Test-MtCaDeviceComplianceAdminsExists</S>
+                <S>Test-MtCaDeviceComplianceExists</S>
+                <S>Test-MtCaEmergencyAccessExists</S>
+                <S>Test-MtCaEnforceNonPersistentBrowserSession</S>
+                <S>Test-MtCaEnforceSignInFrequency</S>
+                <S>Test-MtCaExclusionForDirectorySyncAccount</S>
+                <S>Test-MtCaGap</S>
+                <S>Test-MtCaGroupsRestricted</S>
+                <S>Test-MtCaLicenseUtilization</S>
+                <S>Test-MtCaMfaForAdmin</S>
+                <S>Test-MtCaMfaForAdminManagement</S>
+                <S>Test-MtCaMfaForAllUsers</S>
+                <S>Test-MtCaMfaForGuest</S>
+                <S>Test-MtCaMfaForRiskySignIn</S>
+                <S>Test-MtCaMisconfiguredIDProtection</S>
+                <S>Test-MtCaReferencedGroupsExist</S>
+                <S>Test-MtCaRequirePasswordChangeForHighUserRisk</S>
+                <S>Test-MtCaSecureSecurityInfoRegistration</S>
+                <S>Test-MtCaWIFBlockLegacyAuthentication</S>
+                <S>Test-MtCis365PublicGroup</S>
+                <S>Test-MtCisaActivationNotification</S>
+                <S>Test-MtCisaAntiSpamAllowList</S>
+                <S>Test-MtCisaAntiSpamSafeList</S>
+                <S>Test-MtCisaAppAdminConsent</S>
+                <S>Test-MtCisaAppGroupOwnerConsent</S>
+                <S>Test-MtCisaAppRegistration</S>
+                <S>Test-MtCisaAppUserConsent</S>
+                <S>Test-MtCisaAssignmentNotification</S>
+                <S>Test-MtCisaAttachmentFileType</S>
+                <S>Test-MtCisaAttachmentFilter</S>
+                <S>Test-MtCisaAuditLog</S>
+                <S>Test-MtCisaAuditLogPremium</S>
+                <S>Test-MtCisaAuditLogRetention</S>
+                <S>Test-MtCisaAuthenticatorContext</S>
+                <S>Test-MtCisaAutoExternalForwarding</S>
+                <S>Test-MtCisaBlockExecutable</S>
+                <S>Test-MtCisaBlockHighRiskSignIn</S>
+                <S>Test-MtCisaBlockHighRiskUser</S>
+                <S>Test-MtCisaBlockLegacyAuth</S>
+                <S>Test-MtCisaCalendarSharing</S>
+                <S>Test-MtCisaCloudGlobalAdmin</S>
+                <S>Test-MtCisaContactSharing</S>
+                <S>Test-MtCisaCrossTenantInboundDefault</S>
+                <S>Test-MtCisaDiagnosticSettings</S>
+                <S>Test-MtCisaDkim</S>
+                <S>Test-MtCisaDlp</S>
+                <S>Test-MtCisaDlpAlternate</S>
+                <S>Test-MtCisaDlpBaselineRule</S>
+                <S>Test-MtCisaDlpPii</S>
+                <S>Test-MtCisaDmarcAggregateCisa</S>
+                <S>Test-MtCisaDmarcRecordExist</S>
+                <S>Test-MtCisaDmarcRecordReject</S>
+                <S>Test-MtCisaDmarcReport</S>
+                <S>Test-MtCisaEmailFilterAlternative</S>
+                <S>Test-MtCisaExoAlert</S>
+                <S>Test-MtCisaExoAlertSiem</S>
+                <S>Test-MtCisaExternalSenderWarning</S>
+                <S>Test-MtCisaGlobalAdminCount</S>
+                <S>Test-MtCisaGlobalAdminRatio</S>
+                <S>Test-MtCisaGuestInvitation</S>
+                <S>Test-MtCisaGuestUserAccess</S>
+                <S>Test-MtCisaImpersonation</S>
+                <S>Test-MtCisaImpersonationTip</S>
+                <S>Test-MtCisaMailboxAuditing</S>
+                <S>Test-MtCisaMailboxIntelligence</S>
+                <S>Test-MtCisaMalwareAction</S>
+                <S>Test-MtCisaMalwareZap</S>
+                <S>Test-MtCisaManagedDevice</S>
+                <S>Test-MtCisaManagedDeviceRegistration</S>
+                <S>Test-MtCisaMethodsMigration</S>
+                <S>Test-MtCisaMfa</S>
+                <S>Test-MtCisaNotifyHighRisk</S>
+                <S>Test-MtCisaPasswordExpiration</S>
+                <S>Test-MtCisaPermanentRoleAssignment</S>
+                <S>Test-MtCisaPhishResistant</S>
+                <S>Test-MtCisaPrivilegedPhishResistant</S>
+                <S>Test-MtCisaRequireActivationApproval</S>
+                <S>Test-MtCisaSafeLink</S>
+                <S>Test-MtCisaSafeLinkClickTracking</S>
+                <S>Test-MtCisaSafeLinkDownloadScan</S>
+                <S>Test-MtCisaSmtpAuthentication</S>
+                <S>Test-MtCisaSpamAction</S>
+                <S>Test-MtCisaSpamAlternative</S>
+                <S>Test-MtCisaSpamBypass</S>
+                <S>Test-MtCisaSpamFilter</S>
+                <S>Test-MtCisaSpfDirective</S>
+                <S>Test-MtCisaSpfRestriction</S>
+                <S>Test-MtCisaSpoSharing</S>
+                <S>Test-MtCisaSpoSharingAllowedDomain</S>
+                <S>Test-MtCisAttachmentFilter</S>
+                <S>Test-MtCisAttachmentFilterComprehensive</S>
+                <S>Test-MtCisAuditLogSearch</S>
+                <S>Test-MtCisaUnmanagedRoleAssignment</S>
+                <S>Test-MtCisaWeakFactor</S>
+                <S>Test-MtCisCalendarSharing</S>
+                <S>Test-MtCisCloudAdmin</S>
+                <S>Test-MtCisCommunicateWithUnmanagedTeamsUsers</S>
+                <S>Test-MtCisConnectionFilterSafeList</S>
+                <S>Test-MtCisCustomerLockBox</S>
+                <S>Test-MtCisDkim</S>
+                <S>Test-MtCisGlobalAdminCount</S>
+                <S>Test-MtCisHostedConnectionFilterPolicy</S>
+                <S>Test-MtCisInternalMalwareNotification</S>
+                <S>Test-MtCisOutboundSpamFilterPolicy</S>
+                <S>Test-MtCisPasswordExpiry</S>
+                <S>Test-MtCisSafeAntiPhishingPolicy</S>
+                <S>Test-MtCisSafeAttachment</S>
+                <S>Test-MtCisSafeAttachmentsAtpPolicy</S>
+                <S>Test-MtCisSafeLink</S>
+                <S>Test-MtCisSharedMailboxSignIn</S>
+                <S>Test-MtCisTeamsLobbyBypass</S>
+                <S>Test-MtCisTeamsReportSecurityConcerns</S>
+                <S>Test-MtCisThirdPartyAndCustomApps</S>
+                <S>Test-MtCisThirdPartyFileSharing</S>
+                <S>Test-MtCisZAP</S>
+                <S>Test-MtConditionalAccessWhatIf</S>
+                <S>Test-MtConnection</S>
+                <S>Test-MtDeviceComplianceSettings</S>
+                <S>Test-MtEidscaControl</S>
+                <S>Test-MtGroupCreationRestricted</S>
+                <S>Test-MtHighRiskAppPermissions</S>
+                <S>Test-MtManagedDeviceCleanupSettings</S>
+                <S>Test-MtPimAlertsExists</S>
+                <S>Test-MtPrivPermanentDirectoryRole</S>
+                <S>Test-MtSpExchangeAppAccessPolicy</S>
+                <S>Test-MtTeamsRestrictParticipantGiveRequestControl</S>
+                <S>Test-MtUserAccessAdmin</S>
+                <S>Test-ORCA100</S>
+                <S>Test-ORCA101</S>
+                <S>Test-ORCA102</S>
+                <S>Test-ORCA103</S>
+                <S>Test-ORCA104</S>
+                <S>Test-ORCA105</S>
+                <S>Test-ORCA106</S>
+                <S>Test-ORCA107</S>
+                <S>Test-ORCA108</S>
+                <S>Test-ORCA108_1</S>
+                <S>Test-ORCA109</S>
+                <S>Test-ORCA110</S>
+                <S>Test-ORCA111</S>
+                <S>Test-ORCA112</S>
+                <S>Test-ORCA113</S>
+                <S>Test-ORCA114</S>
+                <S>Test-ORCA115</S>
+                <S>Test-ORCA116</S>
+                <S>Test-ORCA118_1</S>
+                <S>Test-ORCA118_2</S>
+                <S>Test-ORCA118_3</S>
+                <S>Test-ORCA118_4</S>
+                <S>Test-ORCA119</S>
+                <S>Test-ORCA120_malware</S>
+                <S>Test-ORCA120_phish</S>
+                <S>Test-ORCA120_spam</S>
+                <S>Test-ORCA121</S>
+                <S>Test-ORCA123</S>
+                <S>Test-ORCA124</S>
+                <S>Test-ORCA139</S>
+                <S>Test-ORCA140</S>
+                <S>Test-ORCA141</S>
+                <S>Test-ORCA142</S>
+                <S>Test-ORCA143</S>
+                <S>Test-ORCA156</S>
+                <S>Test-ORCA158</S>
+                <S>Test-ORCA179</S>
+                <S>Test-ORCA180</S>
+                <S>Test-ORCA189</S>
+                <S>Test-ORCA189_2</S>
+                <S>Test-ORCA205</S>
+                <S>Test-ORCA220</S>
+                <S>Test-ORCA221</S>
+                <S>Test-ORCA222</S>
+                <S>Test-ORCA223</S>
+                <S>Test-ORCA224</S>
+                <S>Test-ORCA225</S>
+                <S>Test-ORCA226</S>
+                <S>Test-ORCA227</S>
+                <S>Test-ORCA228</S>
+                <S>Test-ORCA229</S>
+                <S>Test-ORCA230</S>
+                <S>Test-ORCA231</S>
+                <S>Test-ORCA232</S>
+                <S>Test-ORCA233</S>
+                <S>Test-ORCA233_1</S>
+                <S>Test-ORCA234</S>
+                <S>Test-ORCA235</S>
+                <S>Test-ORCA236</S>
+                <S>Test-ORCA237</S>
+                <S>Test-ORCA238</S>
+                <S>Test-ORCA239</S>
+                <S>Test-ORCA240</S>
+                <S>Test-ORCA241</S>
+                <S>Test-ORCA242</S>
+                <S>Test-ORCA243</S>
+                <S>Test-ORCA244</S>
+                <S>Update-MaesterTests</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/maester365/maester/releases</S>
+      <Obj N="Dependencies" RefId="7">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="8">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Graph.Authentication</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.27.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Graph.Authentication/2.27.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="9">
+            <TNRef RefId="3" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Pester</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Pester/0.0.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Maester Team. All rights reserved.</S>
+          <S N="description">Maester is an automation framework to assess and monitor your Microsoft 365 security configuration.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/maester365/maester/releases</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">93741</S>
+          <S N="downloadCount">382242</S>
+          <S N="packageSize">8035383</S>
+          <S N="published">23-06-2025 23:44:51 +05:30</S>
+          <S N="created">23-06-2025 23:44:51 +05:30</S>
+          <S N="lastUpdated">13-11-2025 15:10:00 +05:30</S>
+          <S N="tags">Microsoft 365 Cloud Test Pester Entra AzureAD Automation Regression DevOps EntraID PSModule PSEdition_Core PSEdition_Desktop</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-11-13T15:10:00Z</S>
+          <S N="NormalizedVersion">1.3.0</S>
+          <S N="Authors">Maester Team</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Maester.nuspec|Maester.Format.ps1xml|maester-tests\cis\Test-MtCis365PublicGroup.Tests.ps1|public\cis\Test-MtCisAttachmentFilterComprehensive.md|public\core\Update-MaesterTests.ps1|maester-tests\cis\Test-MtCisAttachmentFilter.Tests.ps1|public\cis\Test-MtCisAttachmentFilterComprehensive.ps1|public\eidsca\@Test-MtEidscaControl.txt|Maester.psd1|maester-tests\cis\Test-MtCisAttachmentFilterComprehensive.Tests.ps1|public\cis\Test-MtCisAuditLogSearch.md|public\eidsca\Test-MtEidscaControl.ps1|Maester.psm1|maester-tests\cis\Test-MtCisAuditLogSearch.Tests.ps1|public\cis\Test-MtCisAuditLogSearch.ps1|public\maester\azure\Test-MtUserAccessAdmin.md|README.md|maester-tests\cis\Test-MtCisCalendarSharing.Tests.ps1|public\cis\Test-MtCisCalendarSharing.md|public\maester\azure\Test-MtUserAccessAdmin.ps1|assets\AdaptiveCardPayloadTemplate.json|maester-tests\cis\Test-MtCisCloudAdmin.Tests.ps1|public\cis\Test-MtCisCalendarSharing.ps1|public\maester\entra\Test-MtAppManagementPolicyEnabled.md|assets\EmailTemplate.docx|maester-tests\cis\Test-MtCisCommunicateWithUnmanagedTeamsUsers.Tests.ps1|public\cis\Test-MtCisCloudAdmin.md|public\maester\entra\Test-MtAppManagementPolicyEnabled.ps1|assets\EmailTemplate.html|maester-tests\cis\Test-MtCisConnectionFilterSafeList.Tests.ps1|public\cis\Test-MtCisCloudAdmin.ps1|public\maester\entra\Test-MtAppRegistrationsWithSecrets.md|assets\ReportTemplate.html|maester-tests\cis\Test-MtCisCustomerLockBox.Tests.ps1|public\cis\Test-MtCisCommunicateWithUnmanagedTeamsUsers.md|public\maester\entra\Test-MtAppRegistrationsWithSecrets.ps1|assets\ReportTemplate.md|maester-tests\cis\Test-MtCisDkim.Tests.ps1|public\cis\Test-MtCisCommunicateWithUnmanagedTeamsUsers.ps1|public\maester\entra\Test-MtCaAllAppsExists.ps1|internal\Clear-ModuleVariable.ps1|maester-tests\cis\Test-MtCisGlobalAdminCount.Tests.ps1|public\cis\Test-MtCisConnectionFilterSafeList.md|public\maester\entra\Test-MtCaApplicationEnforcedRestriction.ps1|internal\ConvertFrom-QueryString.ps1|maester-tests\cis\Test-MtCisHostedConnectionFilterPolicy.Tests.ps1|public\cis\Test-MtCisConnectionFilterSafeList.ps1|public\maester\entra\Test-MtCaBlockLegacyExchangeActiveSyncAuthentication.ps1|internal\ConvertTo-MtMaesterResult.ps1|maester-tests\cis\Test-MtCisInternalMalwareNotification.Tests.ps1|public\cis\Test-MtCisCustomerLockBox.md|public\maester\entra\Test-MtCaBlockLegacyOtherAuthentication.ps1|internal\ConvertTo-QueryString.ps1|maester-tests\cis\Test-MtCisOutboundSpamFilterPolicy.Tests.ps1|public\cis\Test-MtCisCustomerLockBox.ps1|public\maester\entra\Test-MtCaBlockUnknownOrUnsupportedDevicePlatform.ps1|internal\Get-GraphObjectMarkdown.ps1|maester-tests\cis\Test-MtCisPasswordExpiry.Tests.ps1|public\cis\Test-MtCisDkim.md|public\maester\entra\Test-MtCaDeviceCodeFlow.md|internal\Get-IsNewMaesterVersionAvailable.ps1|maester-tests\cis\Test-MtCisSafeAntiPhishingPolicy.Tests.ps1|public\cis\Test-MtCisDkim.ps1|public\maester\entra\Test-MtCaDeviceCodeFlow.ps1|internal\Get-ModuleImportOrder.ps1|maester-tests\cis\Test-MtCisSafeAttachment.Tests.ps1|public\cis\Test-MtCisGlobalAdminCount.md|public\maester\entra\Test-MtCaDeviceComplianceAdminsExists.ps1|internal\Get-MtConfirmation.ps1|maester-tests\cis\Test-MtCisSafeAttachmentsAtpPolicy.Tests.ps1|public\cis\Test-MtCisGlobalAdminCount.ps1|public\maester\entra\Test-MtCaDeviceComplianceExists.ps1|internal\Get-MtDirectoryObjects.ps1|maester-tests\cis\Test-MtCisSafeLink.Tests.ps1|public\cis\Test-MtCisHostedConnectionFilterPolicy.md|public\maester\entra\Test-MtCaEmergencyAccessExists.md|internal\Get-MtMaesterConfig.ps1|maester-tests\cis\Test-MtCisSharedMailboxSignIn.Tests.ps1|public\cis\Test-MtCisHostedConnectionFilterPolicy.ps1|public\maester\entra\Test-MtCaEmergencyAccessExists.ps1|internal\Get-MtMaesterConfigTestSetting.ps1|maester-tests\cis\Test-MtCisTeamsLobbyBypass.Tests.ps1|public\cis\Test-MtCisInternalMalwareNotification.md|public\maester\entra\Test-MtCaEnforceNonPersistentBrowserSession.ps1|internal\Get-MtMaesterTestFolderPath.ps1|maester-tests\cis\Test-MtCisTeamsReportSecurityConcerns.Tests.ps1|public\cis\Test-MtCisInternalMalwareNotification.ps1|public\maester\entra\Test-MtCaEnforceSignInFrequency.ps1|internal\Get-MtMarkdownReport.ps1|maester-tests\cis\Test-MtCisThirdPartyAndCustomApps.Tests.ps1|public\cis\Test-MtCisOutboundSpamFilterPolicy.md|public\maester\entra\Test-MtCaExclusionForDirectorySyncAccount.ps1|internal\Get-MtModuleInfo.ps1|maester-tests\cis\Test-MtCisThirdPartyFileSharing.Tests.ps1|public\cis\Test-MtCisOutboundSpamFilterPolicy.ps1|public\maester\entra\Test-MtCaGap.ps1|internal\Get-MtModuleVersion.ps1|maester-tests\cis\Test-MtCisZAP.Tests.ps1|public\cis\Test-MtCisPasswordExpiry.md|public\maester\entra\Test-MtCaGroupsRestricted.md|internal\Get-MtPesterTagValue.ps1|maester-tests\cisa\@template.Testsps1.txt|public\cis\Test-MtCisPasswordExpiry.ps1|public\maester\entra\Test-MtCaGroupsRestricted.ps1|internal\Get-MtRoleInfo.ps1|maester-tests\cisa\entra\Test-MtCisaActivationNotificationGlobalAdmin.Tests.ps1|public\cis\Test-MtCisSafeAntiPhishingPolicy.md|public\maester\entra\Test-MtCaLicenseUtilization.ps1|internal\Get-MtSkippedReason.ps1|maester-tests\cisa\entra\Test-MtCisaActivationNotificationOther.Tests.ps1|public\cis\Test-MtCisSafeAntiPhishingPolicy.ps1|public\maester\entra\Test-MtCaMfaForAdmin.md|internal\Get-MtTotalEntraIdUserCount.ps1|maester-tests\cisa\entra\Test-MtCisaAppAdminConsent.Tests.ps1|public\cis\Test-MtCisSafeAttachment.md|public\maester\entra\Test-MtCaMfaForAdmin.ps1|internal\Get-MtUserInteractive.ps1|maester-tests\cisa\entra\Test-MtCisaAppGroupOwnerConsent.Tests.ps1|public\cis\Test-MtCisSafeAttachment.ps1|public\maester\entra\Test-MtCaMfaForAdminManagement.ps1|internal\Get-ObjectProperty.ps1|maester-tests\cisa\entra\Test-MtCisaAppRegistration.Tests.ps1|public\cis\Test-MtCisSafeAttachmentsAtpPolicy.md|public\maester\entra\Test-MtCaMfaForAllUsers.md|internal\Initialize-MtSession.ps1|maester-tests\cisa\entra\Test-MtCisaAppUserConsent.Tests.ps1|public\cis\Test-MtCisSafeAttachmentsAtpPolicy.ps1|public\maester\entra\Test-MtCaMfaForAllUsers.ps1|internal\Invoke-MtGraphRequestCache.ps1|maester-tests\cisa\entra\Test-MtCisaAssignmentNotification.Tests.ps1|public\cis\Test-MtCisSafeLink.md|public\maester\entra\Test-MtCaMfaForGuest.md|internal\Reset-MtProgressView.ps1|maester-tests\cisa\entra\Test-MtCisaAuthenticatorContext.Tests.ps1|public\cis\Test-MtCisSafeLink.ps1|public\maester\entra\Test-MtCaMfaForGuest.ps1|internal\Set-MtProgressView.ps1|maester-tests\cisa\entra\Test-MtCisaBlockHighRiskSignIns.Tests.ps1|public\cis\Test-MtCisSharedMailboxSignIn.md|public\maester\entra\Test-MtCaMfaForRiskySignIn.md|internal\Show-MtLogo.ps1|maester-tests\cisa\entra\Test-MtCisaBlockHighRiskUsers.Tests.ps1|public\cis\Test-MtCisSharedMailboxSignIn.ps1|public\maester\entra\Test-MtCaMfaForRiskySignIn.ps1|internal\Test-MtContext.ps1|maester-tests\cisa\entra\Test-MtCisaBlockLegacyAuth.Tests.ps1|public\cis\Test-MtCisTeamsLobbyBypass.md|public\maester\entra\Test-MtCaMisconfiguredIDProtection.md|internal\Update-MtMaesterTests.ps1|maester-tests\cisa\entra\Test-MtCisaCloudGlobalAdmin.Tests.ps1|public\cis\Test-MtCisTeamsLobbyBypass.ps1|public\maester\entra\Test-MtCaMisconfiguredIDProtection.ps1|internal\Write-MtProgress.ps1|maester-tests\cisa\entra\Test-MtCisaCrossTenantInboundDefault.Tests.ps1|public\cis\Test-MtCisTeamsReportSecurityConcerns.md|public\maester\entra\Test-MtCaReferencedGroupsExist.md|internal\Write-Telemetry.ps1|maester-tests\cisa\entra\Test-MtCisaDiagnosticSettings.Tests.ps1|public\cis\Test-MtCisTeamsReportSecurityConcerns.ps1|public\maester\entra\Test-MtCaReferencedGroupsExist.ps1|internal\eidsca\@template.md|maester-tests\cisa\entra\Test-MtCisaGlobalAdminCount.Tests.ps1|public\cis\Test-MtCisThirdPartyAndCustomApps.md|public\maester\entra\Test-MtCaRequirePasswordChangeForHighUserRisk.md|internal\eidsca\@templateps1.txt|maester-tests\cisa\entra\Test-MtCisaGlobalAdminRatio.Tests.ps1|public\cis\Test-MtCisThirdPartyAndCustomApps.ps1|public\maester\entra\Test-MtCaRequirePasswordChangeForHighUserRisk.ps1|internal\eidsca\Test-MtEidscaAF01.md|maester-tests\cisa\entra\Test-MtCisaGuestInvitation.Tests.ps1|public\cis\Test-MtCisThirdPartyFileSharing.md|public\maester\entra\Test-MtCaSecureSecurityInfoRegistration.md|internal\eidsca\Test-MtEidscaAF01.ps1|maester-tests\cisa\entra\Test-MtCisaGuestUserAccess.Tests.ps1|public\cis\Test-MtCisThirdPartyFileSharing.ps1|public\maester\entra\Test-MtCaSecureSecurityInfoRegistration.ps1|internal\eidsca\Test-MtEidscaAF02.md|maester-tests\cisa\entra\Test-MtCisaManagedDevice.Tests.ps1|public\cis\Test-MtCisZAP.md|public\maester\entra\Test-MtCaWIFBlockLegacyAuthentication.md|internal\eidsca\Test-MtEidscaAF02.ps1|maester-tests\cisa\entra\Test-MtCisaManagedDeviceRegistration.Tests.ps1|public\cis\Test-MtCisZAP.ps1|public\maester\entra\Test-MtCaWIFBlockLegacyAuthentication.ps1|internal\eidsca\Test-MtEidscaAF03.md|maester-tests\cisa\entra\Test-MtCisaMethodsMigration.Tests.ps1|public\cisa\@template.md|public\maester\entra\Test-MtConditionalAccessWhatIf.ps1|internal\eidsca\Test-MtEidscaAF03.ps1|maester-tests\cisa\entra\Test-MtCisaMfa.Tests.ps1|public\cisa\@templateps1.txt|public\maester\entra\Test-MtGroupCreationRestricted.md|internal\eidsca\Test-MtEidscaAF04.md|maester-tests\cisa\entra\Test-MtCisaNotifyHighRiskUsers.Tests.ps1|public\cisa\entra\Test-MtCisaActivationNotification.md|public\maester\entra\Test-MtGroupCreationRestricted.ps1|internal\eidsca\Test-MtEidscaAF04.ps1|maester-tests\cisa\entra\Test-MtCisaPasswordExpiration.Tests.ps1|public\cisa\entra\Test-MtCisaActivationNotification.ps1|public\maester\entra\Test-MtHighRiskAppPermissions.md|internal\eidsca\Test-MtEidscaAF05.md|maester-tests\cisa\entra\Test-MtCisaPermanentRoleAssignment.Tests.ps1|public\cisa\entra\Test-MtCisaAppAdminConsent.md|public\maester\entra\Test-MtHighRiskAppPermissions.ps1|internal\eidsca\Test-MtEidscaAF05.ps1|maester-tests\cisa\entra\Test-MtCisaPhishResistant.Tests.ps1|public\cisa\entra\Test-MtCisaAppAdminConsent.ps1|public\maester\entra\Test-MtPimAlertsExists.ps1|internal\eidsca\Test-MtEidscaAF06.md|maester-tests\cisa\entra\Test-MtCisaPrivilegedPhishResistant.Tests.ps1|public\cisa\entra\Test-MtCisaAppGroupOwnerConsent.md|public\maester\entra\Test-MtPrivPermanentDirectoryRole.ps1|internal\eidsca\Test-MtEidscaAF06.ps1|maester-tests\cisa\entra\Test-MtCisaRequireActivationApproval.Tests.ps1|public\cisa\entra\Test-MtCisaAppGroupOwnerConsent.ps1|public\maester\entra\Test-MtSpExchangeAppAccessPolicy.md|internal\eidsca\Test-MtEidscaAG01.md|maester-tests\cisa\entra\Test-MtCisaUnmanagedRoleAssignments.Tests.ps1|public\cisa\entra\Test-MtCisaAppRegistration.md|public\maester\entra\Test-MtSpExchangeAppAccessPolicy.ps1|internal\eidsca\Test-MtEidscaAG01.ps1|maester-tests\cisa\entra\Test-MtCisaWeakFactor.Tests.ps1|public\cisa\entra\Test-MtCisaAppRegistration.ps1|public\maester\intune\Test-MtDeviceComplianceSettings.md|internal\eidsca\Test-MtEidscaAG02.md|maester-tests\cisa\exchange\Test-MtCisaAntiSpamAllowList.Tests.ps1|public\cisa\entra\Test-MtCisaAppUserConsent.md|public\maester\intune\Test-MtDeviceComplianceSettings.ps1|internal\eidsca\Test-MtEidscaAG02.ps1|maester-tests\cisa\exchange\Test-MtCisaAntiSpamSafeList.Tests.ps1|public\cisa\entra\Test-MtCisaAppUserConsent.ps1|public\maester\intune\Test-MtManagedDeviceCleanupSettings.md|internal\eidsca\Test-MtEidscaAG03.md|maester-tests\cisa\exchange\Test-MtCisaAttachmentFileType.Tests.ps1|public\cisa\entra\Test-MtCisaAssignmentNotification.md|public\maester\intune\Test-MtManagedDeviceCleanupSettings.ps1|internal\eidsca\Test-MtEidscaAG03.ps1|maester-tests\cisa\exchange\Test-MtCisaAttachmentFilter.Tests.ps1|public\cisa\entra\Test-MtCisaAssignmentNotification.ps1|public\maester\teams\Test-MtTeamsRestrictParticipantGiveRequestControl.md|internal\eidsca\Test-MtEidscaAM01.md|maester-tests\cisa\exchange\Test-MtCisaAuditLog.Tests.ps1|public\cisa\entra\Test-MtCisaAuthenticatorContext.md|public\maester\teams\Test-MtTeamsRestrictParticipantGiveRequestControl.ps1|internal\eidsca\Test-MtEidscaAM01.ps1|maester-tests\cisa\exchange\Test-MtCisaAuditLogPremium.Tests.ps1|public\cisa\entra\Test-MtCisaAuthenticatorContext.ps1|public\orca\Test-ORCA100.md|internal\eidsca\Test-MtEidscaAM02.md|maester-tests\cisa\exchange\Test-MtCisaAuditLogRetention.Tests.ps1|public\cisa\entra\Test-MtCisaBlockHighRiskSignIn.md|public\orca\Test-ORCA100.ps1|internal\eidsca\Test-MtEidscaAM02.ps1|maester-tests\cisa\exchange\Test-MtCisaAutoExternalForwarding.Tests.ps1|public\cisa\entra\Test-MtCisaBlockHighRiskSignIn.ps1|public\orca\Test-ORCA101.md|internal\eidsca\Test-MtEidscaAM03.md|maester-tests\cisa\exchange\Test-MtCisaBlockExecutable.Tests.ps1|public\cisa\entra\Test-MtCisaBlockHighRiskUser.md|public\orca\Test-ORCA101.ps1|internal\eidsca\Test-MtEidscaAM03.ps1|maester-tests\cisa\exchange\Test-MtCisaBlockFileType.Tests.ps1|public\cisa\entra\Test-MtCisaBlockHighRiskUser.ps1|public\orca\Test-ORCA102.md|internal\eidsca\Test-MtEidscaAM04.md|maester-tests\cisa\exchange\Test-MtCisaCalendarSharing.Tests.ps1|public\cisa\entra\Test-MtCisaBlockLegacyAuth.md|public\orca\Test-ORCA102.ps1|internal\eidsca\Test-MtEidscaAM04.ps1|maester-tests\cisa\exchange\Test-MtCisaContactSharing.Tests.ps1|public\cisa\entra\Test-MtCisaBlockLegacyAuth.ps1|public\orca\Test-ORCA103.md|internal\eidsca\Test-MtEidscaAM06.md|maester-tests\cisa\exchange\Test-MtCisaDkim.Tests.ps1|public\cisa\entra\Test-MtCisaCloudGlobalAdmin.md|public\orca\Test-ORCA103.ps1|internal\eidsca\Test-MtEidscaAM06.ps1|maester-tests\cisa\exchange\Test-MtCisaDlp.Tests.ps1|public\cisa\entra\Test-MtCisaCloudGlobalAdmin.ps1|public\orca\Test-ORCA104.md|internal\eidsca\Test-MtEidscaAM07.md|maester-tests\cisa\exchange\Test-MtCisaDlpAlternate.Tests.ps1|public\cisa\entra\Test-MtCisaCrossTenantInboundDefault.md|public\orca\Test-ORCA104.ps1|internal\eidsca\Test-MtEidscaAM07.ps1|maester-tests\cisa\exchange\Test-MtCisaDlpBaselineRule.Tests.ps1|public\cisa\entra\Test-MtCisaCrossTenantInboundDefault.ps1|public\orca\Test-ORCA105.md|internal\eidsca\Test-MtEidscaAM09.md|maester-tests\cisa\exchange\Test-MtCisaDlpPii.Tests.ps1|public\cisa\entra\Test-MtCisaDiagnosticSettings.md|public\orca\Test-ORCA105.ps1|internal\eidsca\Test-MtEidscaAM09.ps1|maester-tests\cisa\exchange\Test-MtCisaDmarcAggregateCisa.Tests.ps1|public\cisa\entra\Test-MtCisaDiagnosticSettings.ps1|public\orca\Test-ORCA106.md|internal\eidsca\Test-MtEidscaAM10.md|maester-tests\cisa\exchange\Test-MtCisaDmarcRecordExist.Tests.ps1|public\cisa\entra\Test-MtCisaGlobalAdminCount.md|public\orca\Test-ORCA106.ps1|internal\eidsca\Test-MtEidscaAM10.ps1|maester-tests\cisa\exchange\Test-MtCisaDmarcRecordReject.Tests.ps1|public\cisa\entra\Test-MtCisaGlobalAdminCount.ps1|public\orca\Test-ORCA107.md|internal\eidsca\Test-MtEidscaAP01.md|maester-tests\cisa\exchange\Test-MtCisaDmarcReport.ps1|public\cisa\entra\Test-MtCisaGlobalAdminRatio.md|public\orca\Test-ORCA107.ps1|internal\eidsca\Test-MtEidscaAP01.ps1|maester-tests\cisa\exchange\Test-MtCisaEmailFilterAlternative.Tests.ps1|public\cisa\entra\Test-MtCisaGlobalAdminRatio.ps1|public\orca\Test-ORCA108.md|internal\eidsca\Test-MtEidscaAP04.md|maester-tests\cisa\exchange\Test-MtCisaExoAlert.Tests.ps1|public\cisa\entra\Test-MtCisaGuestInvitation.md|public\orca\Test-ORCA108.ps1|internal\eidsca\Test-MtEidscaAP04.ps1|maester-tests\cisa\exchange\Test-MtCisaExoAlertSiem.Tests.ps1|public\cisa\entra\Test-MtCisaGuestInvitation.ps1|public\orca\Test-ORCA108_1.md|internal\eidsca\Test-MtEidscaAP05.md|maester-tests\cisa\exchange\Test-MtCisaExternalSenderWarning.Tests.ps1|public\cisa\entra\Test-MtCisaGuestUserAccess.md|public\orca\Test-ORCA108_1.ps1|internal\eidsca\Test-MtEidscaAP05.ps1|maester-tests\cisa\exchange\Test-MtCisaImpersonation.Tests.ps1|public\cisa\entra\Test-MtCisaGuestUserAccess.ps1|public\orca\Test-ORCA109.md|internal\eidsca\Test-MtEidscaAP06.md|maester-tests\cisa\exchange\Test-MtCisaImpersonationTip.Tests.ps1|public\cisa\entra\Test-MtCisaManagedDevice.md|public\orca\Test-ORCA109.ps1|internal\eidsca\Test-MtEidscaAP06.ps1|maester-tests\cisa\exchange\Test-MtCisaMailboxAuditing.Tests.ps1|public\cisa\entra\Test-MtCisaManagedDevice.ps1|public\orca\Test-ORCA110.md|internal\eidsca\Test-MtEidscaAP07.md|maester-tests\cisa\exchange\Test-MtCisaMailboxIntelligence.Tests.ps1|public\cisa\entra\Test-MtCisaManagedDeviceRegistration.md|public\orca\Test-ORCA110.ps1|internal\eidsca\Test-MtEidscaAP07.ps1|maester-tests\cisa\exchange\Test-MtCisaMalwareAction.Tests.ps1|public\cisa\entra\Test-MtCisaManagedDeviceRegistration.ps1|public\orca\Test-ORCA111.md|internal\eidsca\Test-MtEidscaAP08.md|maester-tests\cisa\exchange\Test-MtCisaMalwareScan.Tests.ps1|public\cisa\entra\Test-MtCisaMethodsMigration.md|public\orca\Test-ORCA111.ps1|internal\eidsca\Test-MtEidscaAP08.ps1|maester-tests\cisa\exchange\Test-MtCisaMalwareZap.Tests.ps1|public\cisa\entra\Test-MtCisaMethodsMigration.ps1|public\orca\Test-ORCA112.md|internal\eidsca\Test-MtEidscaAP09.md|maester-tests\cisa\exchange\Test-MtCisaSafeLink.Tests.ps1|public\cisa\entra\Test-MtCisaMfa.md|public\orca\Test-ORCA112.ps1|internal\eidsca\Test-MtEidscaAP09.ps1|maester-tests\cisa\exchange\Test-MtCisaSafeLinkClickTracking.Tests.ps1|public\cisa\entra\Test-MtCisaMfa.ps1|public\orca\Test-ORCA113.md|internal\eidsca\Test-MtEidscaAP10.md|maester-tests\cisa\exchange\Test-MtCisaSafeLinkDownloadScan.Tests.ps1|public\cisa\entra\Test-MtCisaNotifyHighRisk.md|public\orca\Test-ORCA113.ps1|internal\eidsca\Test-MtEidscaAP10.ps1|maester-tests\cisa\exchange\Test-MtCisaSmtpAuthentication.Tests.ps1|public\cisa\entra\Test-MtCisaNotifyHighRisk.ps1|public\orca\Test-ORCA114.md|internal\eidsca\Test-MtEidscaAP14.md|maester-tests\cisa\exchange\Test-MtCisaSpamAction.Tests.ps1|public\cisa\entra\Test-MtCisaPasswordExpiration.md|public\orca\Test-ORCA114.ps1|internal\eidsca\Test-MtEidscaAP14.ps1|maester-tests\cisa\exchange\Test-MtCisaSpamAlternative.Tests.ps1|public\cisa\entra\Test-MtCisaPasswordExpiration.ps1|public\orca\Test-ORCA115.md|internal\eidsca\Test-MtEidscaAS04.md|maester-tests\cisa\exchange\Test-MtCisaSpamBypass.Tests.ps1|public\cisa\entra\Test-MtCisaPermanentRoleAssignment.md|public\orca\Test-ORCA115.ps1|internal\eidsca\Test-MtEidscaAS04.ps1|maester-tests\cisa\exchange\Test-MtCisaSpamFilter.Tests.ps1|public\cisa\entra\Test-MtCisaPermanentRoleAssignment.ps1|public\orca\Test-ORCA116.md|internal\eidsca\Test-MtEidscaAT01.md|maester-tests\cisa\exchange\Test-MtCisaSpfDirective.Tests.ps1|public\cisa\entra\Test-MtCisaPhishResistant.md|public\orca\Test-ORCA116.ps1|internal\eidsca\Test-MtEidscaAT01.ps1|maester-tests\cisa\exchange\Test-MtCisaSpfRestriction.Tests.ps1|public\cisa\entra\Test-MtCisaPhishResistant.ps1|public\orca\Test-ORCA118_1.md|internal\eidsca\Test-MtEidscaAT02.md|maester-tests\cisa\spo\Test-MtCisaSpoSharing.Tests.ps1|public\cisa\entra\Test-MtCisaPrivilegedPhishResistant.md|public\orca\Test-ORCA118_1.ps1|internal\eidsca\Test-MtEidscaAT02.ps1|maester-tests\cisa\spo\Test-MtCisaSpoSharingAllowedDomain.Tests.ps1|public\cisa\entra\Test-MtCisaPrivilegedPhishResistant.ps1|public\orca\Test-ORCA118_2.md|internal\eidsca\Test-MtEidscaAV01.md|maester-tests\Custom\README.md|public\cisa\entra\Test-MtCisaRequireActivationApproval.md|public\orca\Test-ORCA118_2.ps1|internal\eidsca\Test-MtEidscaAV01.ps1|maester-tests\EIDSCA\Test-EIDSCA.Generated.Tests.ps1|public\cisa\entra\Test-MtCisaRequireActivationApproval.ps1|public\orca\Test-ORCA118_3.md|internal\eidsca\Test-MtEidscaCP01.md|maester-tests\Maester\Azure\UserAccessAdmin.Tests.ps1|public\cisa\entra\Test-MtCisaUnmanagedRoleAssignment.md|public\orca\Test-ORCA118_3.ps1|internal\eidsca\Test-MtEidscaCP01.ps1|maester-tests\Maester\Entra\Test-AppManagementPolicies.Tests.ps1|public\cisa\entra\Test-MtCisaUnmanagedRoleAssignment.ps1|public\orca\Test-ORCA118_4.md|internal\eidsca\Test-MtEidscaCP03.md|maester-tests\Maester\Entra\Test-AppRegistrations.Tests.ps1|public\cisa\entra\Test-MtCisaWeakFactor.md|public\orca\Test-ORCA118_4.ps1|internal\eidsca\Test-MtEidscaCP03.ps1|maester-tests\Maester\Entra\Test-ConditionalAccessBaseline.Tests.ps1|public\cisa\entra\Test-MtCisaWeakFactor.ps1|public\orca\Test-ORCA119.md|internal\eidsca\Test-MtEidscaCP04.md|maester-tests\Maester\Entra\Test-ConditionalAccessWhatIf.Tests.ps1|public\cisa\exchange\ConvertFrom-MailAuthenticationRecordDkim.ps1|public\orca\Test-ORCA119.ps1|internal\eidsca\Test-MtEidscaCP04.ps1|maester-tests\Maester\Entra\Test-EntraRecommendations.Tests.ps1|public\cisa\exchange\ConvertFrom-MailAuthenticationRecordDmarc.ps1|public\orca\Test-ORCA120_malware.md|internal\eidsca\Test-MtEidscaCR01.md|maester-tests\Maester\Entra\Test-Groups.Tests.ps1|public\cisa\exchange\ConvertFrom-MailAuthenticationRecordMx.ps1|public\orca\Test-ORCA120_malware.ps1|internal\eidsca\Test-MtEidscaCR01.ps1|maester-tests\Maester\Entra\Test-MtHighRiskAppPermissions.Tests.ps1|public\cisa\exchange\ConvertFrom-MailAuthenticationRecordSpf.ps1|public\orca\Test-ORCA120_phish.md|internal\eidsca\Test-MtEidscaCR02.md|maester-tests\Maester\Entra\Test-PrivilegedAssignments.Tests.ps1|public\cisa\exchange\Get-MailAuthenticationRecord.ps1|public\orca\Test-ORCA120_phish.ps1|internal\eidsca\Test-MtEidscaCR02.ps1|maester-tests\Maester\Exchange\Test-ExchangeSetting.Tests.ps1|public\cisa\exchange\Get-MtExo.ps1|public\orca\Test-ORCA120_spam.md|internal\eidsca\Test-MtEidscaCR03.md|maester-tests\Maester\Intune\Test-MtIntunePlatform.Tests.ps1|public\cisa\exchange\Resolve-SPFRecord.ps1|public\orca\Test-ORCA120_spam.ps1|internal\eidsca\Test-MtEidscaCR03.ps1|maester-tests\Maester\Teams\Test-TeamsMeeting.Tests.ps1|public\cisa\exchange\Test-MtCisaAntiSpamAllowList.md|public\orca\Test-ORCA121.md|internal\eidsca\Test-MtEidscaCR04.md|maester-tests\orca\Test-ORCA100.Tests.ps1|public\cisa\exchange\Test-MtCisaAntiSpamAllowList.ps1|public\orca\Test-ORCA121.ps1|internal\eidsca\Test-MtEidscaCR04.ps1|maester-tests\orca\Test-ORCA101.Tests.ps1|public\cisa\exchange\Test-MtCisaAntiSpamSafeList.md|public\orca\Test-ORCA123.md|internal\eidsca\Test-MtEidscaPR01.md|maester-tests\orca\Test-ORCA102.Tests.ps1|public\cisa\exchange\Test-MtCisaAntiSpamSafeList.ps1|public\orca\Test-ORCA123.ps1|internal\eidsca\Test-MtEidscaPR01.ps1|maester-tests\orca\Test-ORCA103.Tests.ps1|public\cisa\exchange\Test-MtCisaAttachmentFileType.md|public\orca\Test-ORCA124.md|internal\eidsca\Test-MtEidscaPR02.md|maester-tests\orca\Test-ORCA104.Tests.ps1|public\cisa\exchange\Test-MtCisaAttachmentFileType.ps1|public\orca\Test-ORCA124.ps1|internal\eidsca\Test-MtEidscaPR02.ps1|maester-tests\orca\Test-ORCA105.Tests.ps1|public\cisa\exchange\Test-MtCisaAttachmentFilter.md|public\orca\Test-ORCA139.md|internal\eidsca\Test-MtEidscaPR03.md|maester-tests\orca\Test-ORCA106.Tests.ps1|public\cisa\exchange\Test-MtCisaAttachmentFilter.ps1|public\orca\Test-ORCA139.ps1|internal\eidsca\Test-MtEidscaPR03.ps1|maester-tests\orca\Test-ORCA107.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLog.md|public\orca\Test-ORCA140.md|internal\eidsca\Test-MtEidscaPR05.md|maester-tests\orca\Test-ORCA108.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLog.ps1|public\orca\Test-ORCA140.ps1|internal\eidsca\Test-MtEidscaPR05.ps1|maester-tests\orca\Test-ORCA108_1.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLogPremium.md|public\orca\Test-ORCA141.md|internal\eidsca\Test-MtEidscaPR06.md|maester-tests\orca\Test-ORCA109.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLogPremium.ps1|public\orca\Test-ORCA141.ps1|internal\eidsca\Test-MtEidscaPR06.ps1|maester-tests\orca\Test-ORCA110.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLogRetention.md|public\orca\Test-ORCA142.md|internal\eidsca\Test-MtEidscaST08.md|maester-tests\orca\Test-ORCA111.Tests.ps1|public\cisa\exchange\Test-MtCisaAuditLogRetention.ps1|public\orca\Test-ORCA142.ps1|internal\eidsca\Test-MtEidscaST08.ps1|maester-tests\orca\Test-ORCA112.Tests.ps1|public\cisa\exchange\Test-MtCisaAutoExternalForwarding.md|public\orca\Test-ORCA143.md|internal\eidsca\Test-MtEidscaST09.md|maester-tests\orca\Test-ORCA113.Tests.ps1|public\cisa\exchange\Test-MtCisaAutoExternalForwarding.ps1|public\orca\Test-ORCA143.ps1|internal\eidsca\Test-MtEidscaST09.ps1|maester-tests\orca\Test-ORCA114.Tests.ps1|public\cisa\exchange\Test-MtCisaBlockExecutable.md|public\orca\Test-ORCA156.md|internal\orca\Add-IsPresetValue.ps1|maester-tests\orca\Test-ORCA115.Tests.ps1|public\cisa\exchange\Test-MtCisaBlockExecutable.ps1|public\orca\Test-ORCA156.ps1|internal\orca\check-ORCA100.ps1|maester-tests\orca\Test-ORCA116.Tests.ps1|public\cisa\exchange\Test-MtCisaBlockFileType.md|public\orca\Test-ORCA158.md|internal\orca\check-ORCA101.ps1|maester-tests\orca\Test-ORCA118_1.Tests.ps1|public\cisa\exchange\Test-MtCisaCalendarSharing.md|public\orca\Test-ORCA158.ps1|internal\orca\check-ORCA102.ps1|maester-tests\orca\Test-ORCA118_2.Tests.ps1|public\cisa\exchange\Test-MtCisaCalendarSharing.ps1|public\orca\Test-ORCA179.md|internal\orca\check-ORCA103.ps1|maester-tests\orca\Test-ORCA118_3.Tests.ps1|public\cisa\exchange\Test-MtCisaContactSharing.md|public\orca\Test-ORCA179.ps1|internal\orca\check-ORCA104.ps1|maester-tests\orca\Test-ORCA118_4.Tests.ps1|public\cisa\exchange\Test-MtCisaContactSharing.ps1|public\orca\Test-ORCA180.md|internal\orca\check-ORCA105.ps1|maester-tests\orca\Test-ORCA119.Tests.ps1|public\cisa\exchange\Test-MtCisaDkim.md|public\orca\Test-ORCA180.ps1|internal\orca\check-ORCA106.ps1|maester-tests\orca\Test-ORCA120_malware.Tests.ps1|public\cisa\exchange\Test-MtCisaDkim.ps1|public\orca\Test-ORCA189.md|internal\orca\check-ORCA107.ps1|maester-tests\orca\Test-ORCA120_phish.Tests.ps1|public\cisa\exchange\Test-MtCisaDlp.md|public\orca\Test-ORCA189.ps1|internal\orca\check-ORCA108.ps1|maester-tests\orca\Test-ORCA120_spam.Tests.ps1|public\cisa\exchange\Test-MtCisaDlp.ps1|public\orca\Test-ORCA189_2.md|internal\orca\check-ORCA108_1.ps1|maester-tests\orca\Test-ORCA121.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpAlternate.md|public\orca\Test-ORCA189_2.ps1|internal\orca\check-ORCA109.ps1|maester-tests\orca\Test-ORCA123.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpAlternate.ps1|public\orca\Test-ORCA205.md|internal\orca\check-ORCA110.ps1|maester-tests\orca\Test-ORCA124.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpBaselineRule.md|public\orca\Test-ORCA205.ps1|internal\orca\check-ORCA111.ps1|maester-tests\orca\Test-ORCA139.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpBaselineRule.ps1|public\orca\Test-ORCA220.md|internal\orca\check-ORCA112.ps1|maester-tests\orca\Test-ORCA140.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpPii.md|public\orca\Test-ORCA220.ps1|internal\orca\check-ORCA113.ps1|maester-tests\orca\Test-ORCA141.Tests.ps1|public\cisa\exchange\Test-MtCisaDlpPii.ps1|public\orca\Test-ORCA221.md|internal\orca\check-ORCA114.ps1|maester-tests\orca\Test-ORCA142.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcAggregateCisa.md|public\orca\Test-ORCA221.ps1|internal\orca\check-ORCA115.ps1|maester-tests\orca\Test-ORCA143.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcAggregateCisa.ps1|public\orca\Test-ORCA222.md|internal\orca\check-ORCA116.ps1|maester-tests\orca\Test-ORCA156.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcRecordExist.md|public\orca\Test-ORCA222.ps1|internal\orca\check-ORCA118_1.ps1|maester-tests\orca\Test-ORCA158.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcRecordExist.ps1|public\orca\Test-ORCA223.md|internal\orca\check-ORCA118_2.ps1|maester-tests\orca\Test-ORCA179.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcRecordReject.md|public\orca\Test-ORCA223.ps1|internal\orca\check-ORCA118_3.ps1|maester-tests\orca\Test-ORCA180.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcRecordReject.ps1|public\orca\Test-ORCA224.md|internal\orca\check-ORCA118_4.ps1|maester-tests\orca\Test-ORCA189.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcReport.md|public\orca\Test-ORCA224.ps1|internal\orca\check-ORCA119.ps1|maester-tests\orca\Test-ORCA189_2.Tests.ps1|public\cisa\exchange\Test-MtCisaDmarcReport.ps1|public\orca\Test-ORCA225.md|internal\orca\check-ORCA120_malware.ps1|maester-tests\orca\Test-ORCA205.Tests.ps1|public\cisa\exchange\Test-MtCisaEmailFilterAlternative.md|public\orca\Test-ORCA225.ps1|internal\orca\check-ORCA120_phish.ps1|maester-tests\orca\Test-ORCA220.Tests.ps1|public\cisa\exchange\Test-MtCisaEmailFilterAlternative.ps1|public\orca\Test-ORCA226.md|internal\orca\check-ORCA120_spam.ps1|maester-tests\orca\Test-ORCA221.Tests.ps1|public\cisa\exchange\Test-MtCisaExoAlert.md|public\orca\Test-ORCA226.ps1|internal\orca\check-ORCA121.ps1|maester-tests\orca\Test-ORCA222.Tests.ps1|public\cisa\exchange\Test-MtCisaExoAlert.ps1|public\orca\Test-ORCA227.md|internal\orca\check-ORCA123.ps1|maester-tests\orca\Test-ORCA223.Tests.ps1|public\cisa\exchange\Test-MtCisaExoAlertSiem.md|public\orca\Test-ORCA227.ps1|internal\orca\check-ORCA124.ps1|maester-tests\orca\Test-ORCA224.Tests.ps1|public\cisa\exchange\Test-MtCisaExoAlertSiem.ps1|public\orca\Test-ORCA228.md|internal\orca\check-ORCA139.ps1|maester-tests\orca\Test-ORCA225.Tests.ps1|public\cisa\exchange\Test-MtCisaExternalSenderWarning.md|public\orca\Test-ORCA228.ps1|internal\orca\check-ORCA140.ps1|maester-tests\orca\Test-ORCA226.Tests.ps1|public\cisa\exchange\Test-MtCisaExternalSenderWarning.ps1|public\orca\Test-ORCA229.md|internal\orca\check-ORCA141.ps1|maester-tests\orca\Test-ORCA227.Tests.ps1|public\cisa\exchange\Test-MtCisaImpersonation.md|public\orca\Test-ORCA229.ps1|internal\orca\check-ORCA142.ps1|maester-tests\orca\Test-ORCA228.Tests.ps1|public\cisa\exchange\Test-MtCisaImpersonation.ps1|public\orca\Test-ORCA230.md|internal\orca\check-ORCA143.ps1|maester-tests\orca\Test-ORCA229.Tests.ps1|public\cisa\exchange\Test-MtCisaImpersonationTip.md|public\orca\Test-ORCA230.ps1|internal\orca\check-ORCA156.ps1|maester-tests\orca\Test-ORCA230.Tests.ps1|public\cisa\exchange\Test-MtCisaImpersonationTip.ps1|public\orca\Test-ORCA231.md|internal\orca\check-ORCA158.ps1|maester-tests\orca\Test-ORCA231.Tests.ps1|public\cisa\exchange\Test-MtCisaMailboxAuditing.md|public\orca\Test-ORCA231.ps1|internal\orca\check-ORCA179.ps1|maester-tests\orca\Test-ORCA232.Tests.ps1|public\cisa\exchange\Test-MtCisaMailboxAuditing.ps1|public\orca\Test-ORCA232.md|internal\orca\check-ORCA180.ps1|maester-tests\orca\Test-ORCA233.Tests.ps1|public\cisa\exchange\Test-MtCisaMailboxIntelligence.md|public\orca\Test-ORCA232.ps1|internal\orca\check-ORCA189.ps1|maester-tests\orca\Test-ORCA233_1.Tests.ps1|public\cisa\exchange\Test-MtCisaMailboxIntelligence.ps1|public\orca\Test-ORCA233.md|internal\orca\check-ORCA189_2.ps1|maester-tests\orca\Test-ORCA234.Tests.ps1|public\cisa\exchange\Test-MtCisaMalwareAction.md|public\orca\Test-ORCA233.ps1|internal\orca\check-ORCA205.ps1|maester-tests\orca\Test-ORCA235.Tests.ps1|public\cisa\exchange\Test-MtCisaMalwareAction.ps1|public\orca\Test-ORCA233_1.md|internal\orca\check-ORCA220.ps1|maester-tests\orca\Test-ORCA236.Tests.ps1|public\cisa\exchange\Test-MtCisaMalwareScan.md|public\orca\Test-ORCA233_1.ps1|internal\orca\check-ORCA221.ps1|maester-tests\orca\Test-ORCA237.Tests.ps1|public\cisa\exchange\Test-MtCisaMalwareZap.md|public\orca\Test-ORCA234.md|internal\orca\check-ORCA222.ps1|maester-tests\orca\Test-ORCA238.Tests.ps1|public\cisa\exchange\Test-MtCisaMalwareZap.ps1|public\orca\Test-ORCA234.ps1|internal\orca\check-ORCA223.ps1|maester-tests\orca\Test-ORCA239.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLink.md|public\orca\Test-ORCA235.md|internal\orca\check-ORCA224.ps1|maester-tests\orca\Test-ORCA240.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLink.ps1|public\orca\Test-ORCA235.ps1|internal\orca\check-ORCA225.ps1|maester-tests\orca\Test-ORCA241.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLinkClickTracking.md|public\orca\Test-ORCA236.md|internal\orca\check-ORCA226.ps1|maester-tests\orca\Test-ORCA242.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLinkClickTracking.ps1|public\orca\Test-ORCA236.ps1|internal\orca\check-ORCA227.ps1|maester-tests\orca\Test-ORCA243.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLinkDownloadScan.md|public\orca\Test-ORCA237.md|internal\orca\check-ORCA228.ps1|maester-tests\orca\Test-ORCA244.Tests.ps1|public\cisa\exchange\Test-MtCisaSafeLinkDownloadScan.ps1|public\orca\Test-ORCA237.ps1|internal\orca\check-ORCA229.ps1|public\Add-MtTestResultDetail.ps1|public\cisa\exchange\Test-MtCisaSmtpAuthentication.md|public\orca\Test-ORCA238.md|internal\orca\check-ORCA230.ps1|public\Clear-MtDnsCache.ps1|public\cisa\exchange\Test-MtCisaSmtpAuthentication.ps1|public\orca\Test-ORCA238.ps1|internal\orca\check-ORCA231.ps1|public\Clear-MtExoCache.ps1|public\cisa\exchange\Test-MtCisaSpamAction.md|public\orca\Test-ORCA239.md|internal\orca\check-ORCA232.ps1|public\Clear-MtGraphCache.ps1|public\cisa\exchange\Test-MtCisaSpamAction.ps1|public\orca\Test-ORCA239.ps1|internal\orca\check-ORCA233.ps1|public\Compare-MtTestResult.ps1|public\cisa\exchange\Test-MtCisaSpamAlternative.md|public\orca\Test-ORCA240.md|internal\orca\check-ORCA233_1.ps1|public\Connect-Maester.ps1|public\cisa\exchange\Test-MtCisaSpamAlternative.ps1|public\orca\Test-ORCA240.ps1|internal\orca\check-ORCA234.ps1|public\Disconnect-Maester.ps1|public\cisa\exchange\Test-MtCisaSpamBypass.md|public\orca\Test-ORCA241.md|internal\orca\check-ORCA235.ps1|public\Get-MtAuthenticationMethodPolicyConfig.ps1|public\cisa\exchange\Test-MtCisaSpamBypass.ps1|public\orca\Test-ORCA241.ps1|internal\orca\check-ORCA236.ps1|public\Get-MtConditionalAccessPolicy.ps1|public\cisa\exchange\Test-MtCisaSpamFilter.md|public\orca\Test-ORCA242.md|internal\orca\check-ORCA237.ps1|public\Get-MtGraphScope.ps1|public\cisa\exchange\Test-MtCisaSpamFilter.ps1|public\orca\Test-ORCA242.ps1|internal\orca\check-ORCA238.ps1|public\Get-MtGroupMember.ps1|public\cisa\exchange\Test-MtCisaSpfDirective.md|public\orca\Test-ORCA243.md|internal\orca\check-ORCA239.ps1|public\Get-MtLicenseInformation.ps1|public\cisa\exchange\Test-MtCisaSpfDirective.ps1|public\orca\Test-ORCA243.ps1|internal\orca\check-ORCA240.ps1|public\Get-MtRole.ps1|public\cisa\exchange\Test-MtCisaSpfRestriction.md|public\orca\Test-ORCA244.md|internal\orca\check-ORCA241.ps1|public\Get-MtRoleMember.ps1|public\cisa\exchange\Test-MtCisaSpfRestriction.ps1|public\orca\Test-ORCA244.ps1|internal\orca\check-ORCA242.ps1|public\Get-MtUser.ps1|public\cisa\spo\Test-MtCisaSpoSharing.md|tests\pester.ps1|internal\orca\check-ORCA243.ps1|public\Get-MtUserAuthenticationMethod.ps1|public\cisa\spo\Test-MtCisaSpoSharing.ps1|tests\functions\Common.Tests.ps1|internal\orca\check-ORCA244.ps1|public\Get-MtUserAuthenticationMethodInfoByType.ps1|public\cisa\spo\Test-MtCisaSpoSharingAllowedDomain.md|tests\functions\Invoke-Maester.Tests.ps1|internal\orca\Get-AnyPolicyState.ps1|public\Invoke-Maester.ps1|public\cisa\spo\Test-MtCisaSpoSharingAllowedDomain.ps1|tests\functions\MaesterConfig.Tests.ps1|internal\orca\Get-ORCACollection.ps1|public\Invoke-MtGraphRequest.ps1|public\core\Convert-MtResultsToFlatObject.ps1|tests\functions\Test-MtCaEnforceNonPersistentBrowserSession.Tests.ps1|internal\orca\Get-PolicyStateInt.ps1|public\Send-MtMail.ps1|public\core\Get-MtAdminPortalUrl.ps1|tests\functions\Test-MtCaMfaForGuest.Tests.ps1|internal\orca\Get-PolicyStates.ps1|public\Send-MtTeamsMessage.ps1|public\core\Get-MtHtmlReport.ps1|tests\general\Help.Tests.ps1|internal\orca\orcaClass.psm1|public\cis\Test-MtCis365PublicGroup.md|public\core\Get-MtSession.ps1|tests\general\Manifest.Tests.ps1|internal\portal\Get-MtLinkServicePrincipal.ps1|public\cis\Test-MtCis365PublicGroup.ps1|public\core\Install-MaesterTests.ps1|tests\general\Module.Tests.ps1|maester-tests\maester-config.json|public\cis\Test-MtCisAttachmentFilter.md|public\core\Invoke-MtAzureRequest.ps1|tests\general\PSScriptAnalyzer.Tests.ps1|maester-tests\README.md|public\cis\Test-MtCisAttachmentFilter.ps1|public\core\Test-MtConnection.ps1</S>
+          <S N="Functions">Add-MtTestResultDetail Clear-MtDnsCache Clear-MtExoCache Clear-MtGraphCache Compare-MtTestResult Connect-Maester Convert-MtResultsToFlatObject ConvertFrom-MailAuthenticationRecordDkim ConvertFrom-MailAuthenticationRecordDmarc ConvertFrom-MailAuthenticationRecordMx ConvertFrom-MailAuthenticationRecordSpf Disconnect-Maester Get-MailAuthenticationRecord Get-MtAdminPortalUrl Get-MtAuthenticationMethodPolicyConfig Get-MtConditionalAccessPolicy Get-MtExo Get-MtGraphScope Get-MtGroupMember Get-MtHtmlReport Get-MtLicenseInformation Get-MtRole Get-MtRoleMember Get-MtSession Get-MtUser Get-MtUserAuthenticationMethod Get-MtUserAuthenticationMethodInfoByType Install-MaesterTests Invoke-Maester Invoke-MtAzureRequest Invoke-MtGraphRequest Resolve-SPFRecord Send-MtMail Send-MtTeamsMessage Test-MtAppManagementPolicyEnabled Test-MtAppRegistrationsWithSecrets Test-MtCaAllAppsExists Test-MtCaApplicationEnforcedRestriction Test-MtCaBlockLegacyExchangeActiveSyncAuthentication Test-MtCaBlockLegacyOtherAuthentication Test-MtCaBlockUnknownOrUnsupportedDevicePlatform Test-MtCaDeviceCodeFlow Test-MtCaDeviceComplianceAdminsExists Test-MtCaDeviceComplianceExists Test-MtCaEmergencyAccessExists Test-MtCaEnforceNonPersistentBrowserSession Test-MtCaEnforceSignInFrequency Test-MtCaExclusionForDirectorySyncAccount Test-MtCaGap Test-MtCaGroupsRestricted Test-MtCaLicenseUtilization Test-MtCaMfaForAdmin Test-MtCaMfaForAdminManagement Test-MtCaMfaForAllUsers Test-MtCaMfaForGuest Test-MtCaMfaForRiskySignIn Test-MtCaMisconfiguredIDProtection Test-MtCaReferencedGroupsExist Test-MtCaRequirePasswordChangeForHighUserRisk Test-MtCaSecureSecurityInfoRegistration Test-MtCaWIFBlockLegacyAuthentication Test-MtCis365PublicGroup Test-MtCisaActivationNotification Test-MtCisaAntiSpamAllowList Test-MtCisaAntiSpamSafeList Test-MtCisaAppAdminConsent Test-MtCisaAppGroupOwnerConsent Test-MtCisaAppRegistration Test-MtCisaAppUserConsent Test-MtCisaAssignmentNotification Test-MtCisaAttachmentFileType Test-MtCisaAttachmentFilter Test-MtCisaAuditLog Test-MtCisaAuditLogPremium Test-MtCisaAuditLogRetention Test-MtCisaAuthenticatorContext Test-MtCisaAutoExternalForwarding Test-MtCisaBlockExecutable Test-MtCisaBlockHighRiskSignIn Test-MtCisaBlockHighRiskUser Test-MtCisaBlockLegacyAuth Test-MtCisaCalendarSharing Test-MtCisaCloudGlobalAdmin Test-MtCisaContactSharing Test-MtCisaCrossTenantInboundDefault Test-MtCisaDiagnosticSettings Test-MtCisaDkim Test-MtCisaDlp Test-MtCisaDlpAlternate Test-MtCisaDlpBaselineRule Test-MtCisaDlpPii Test-MtCisaDmarcAggregateCisa Test-MtCisaDmarcRecordExist Test-MtCisaDmarcRecordReject Test-MtCisaDmarcReport Test-MtCisaEmailFilterAlternative Test-MtCisaExoAlert Test-MtCisaExoAlertSiem Test-MtCisaExternalSenderWarning Test-MtCisaGlobalAdminCount Test-MtCisaGlobalAdminRatio Test-MtCisaGuestInvitation Test-MtCisaGuestUserAccess Test-MtCisaImpersonation Test-MtCisaImpersonationTip Test-MtCisaMailboxAuditing Test-MtCisaMailboxIntelligence Test-MtCisaMalwareAction Test-MtCisaMalwareZap Test-MtCisaManagedDevice Test-MtCisaManagedDeviceRegistration Test-MtCisaMethodsMigration Test-MtCisaMfa Test-MtCisaNotifyHighRisk Test-MtCisaPasswordExpiration Test-MtCisaPermanentRoleAssignment Test-MtCisaPhishResistant Test-MtCisaPrivilegedPhishResistant Test-MtCisaRequireActivationApproval Test-MtCisaSafeLink Test-MtCisaSafeLinkClickTracking Test-MtCisaSafeLinkDownloadScan Test-MtCisaSmtpAuthentication Test-MtCisaSpamAction Test-MtCisaSpamAlternative Test-MtCisaSpamBypass Test-MtCisaSpamFilter Test-MtCisaSpfDirective Test-MtCisaSpfRestriction Test-MtCisaSpoSharing Test-MtCisaSpoSharingAllowedDomain Test-MtCisAttachmentFilter Test-MtCisAttachmentFilterComprehensive Test-MtCisAuditLogSearch Test-MtCisaUnmanagedRoleAssignment Test-MtCisaWeakFactor Test-MtCisCalendarSharing Test-MtCisCloudAdmin Test-MtCisCommunicateWithUnmanagedTeamsUsers Test-MtCisConnectionFilterSafeList Test-MtCisCustomerLockBox Test-MtCisDkim Test-MtCisGlobalAdminCount Test-MtCisHostedConnectionFilterPolicy Test-MtCisInternalMalwareNotification Test-MtCisOutboundSpamFilterPolicy Test-MtCisPasswordExpiry Test-MtCisSafeAntiPhishingPolicy Test-MtCisSafeAttachment Test-MtCisSafeAttachmentsAtpPolicy Test-MtCisSafeLink Test-MtCisSharedMailboxSignIn Test-MtCisTeamsLobbyBypass Test-MtCisTeamsReportSecurityConcerns Test-MtCisThirdPartyAndCustomApps Test-MtCisThirdPartyFileSharing Test-MtCisZAP Test-MtConditionalAccessWhatIf Test-MtConnection Test-MtDeviceComplianceSettings Test-MtEidscaControl Test-MtGroupCreationRestricted Test-MtHighRiskAppPermissions Test-MtManagedDeviceCleanupSettings Test-MtPimAlertsExists Test-MtPrivPermanentDirectoryRole Test-MtSpExchangeAppAccessPolicy Test-MtTeamsRestrictParticipantGiveRequestControl Test-MtUserAccessAdmin Test-ORCA100 Test-ORCA101 Test-ORCA102 Test-ORCA103 Test-ORCA104 Test-ORCA105 Test-ORCA106 Test-ORCA107 Test-ORCA108 Test-ORCA108_1 Test-ORCA109 Test-ORCA110 Test-ORCA111 Test-ORCA112 Test-ORCA113 Test-ORCA114 Test-ORCA115 Test-ORCA116 Test-ORCA118_1 Test-ORCA118_2 Test-ORCA118_3 Test-ORCA118_4 Test-ORCA119 Test-ORCA120_malware Test-ORCA120_phish Test-ORCA120_spam Test-ORCA121 Test-ORCA123 Test-ORCA124 Test-ORCA139 Test-ORCA140 Test-ORCA141 Test-ORCA142 Test-ORCA143 Test-ORCA156 Test-ORCA158 Test-ORCA179 Test-ORCA180 Test-ORCA189 Test-ORCA189_2 Test-ORCA205 Test-ORCA220 Test-ORCA221 Test-ORCA222 Test-ORCA223 Test-ORCA224 Test-ORCA225 Test-ORCA226 Test-ORCA227 Test-ORCA228 Test-ORCA229 Test-ORCA230 Test-ORCA231 Test-ORCA232 Test-ORCA233 Test-ORCA233_1 Test-ORCA234 Test-ORCA235 Test-ORCA236 Test-ORCA237 Test-ORCA238 Test-ORCA239 Test-ORCA240 Test-ORCA241 Test-ORCA242 Test-ORCA243 Test-ORCA244 Update-MaesterTests</S>
+          <S N="GUID">502a7fe7-b1ae-4bf5-98db-00831b14ed6f</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Maester Team</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\DELL\Repos\maester-durable-v2\modules\Maester\1.3.0</S>
+    </MS>
+  </Obj>
+</Objs>

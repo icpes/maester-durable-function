@@ -1,0 +1,85 @@
+param($Input)
+
+Write-Host "F2 Activity started for: $($Input.Category)"
+
+try {
+    $config = $Input.Config
+    $category = $Input.Category
+    
+    # Import required modules
+    Write-Host "Importing Maester module..."
+    Import-Module Maester -ErrorAction Stop
+    Import-Module Microsoft.Graph.Authentication -ErrorAction Stop
+    
+    # Connect to Microsoft Graph
+    Write-Host "Connecting to Microsoft Graph..."
+    $secureSecret = ConvertTo-SecureString $config.ClientSecret -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential($config.ClientId, $secureSecret)
+    
+    Connect-MgGraph -TenantId $config.TenantId -ClientSecretCredential $credential -NoWelcome
+    
+    Write-Host "Running Maester tests for $category..."
+    
+    # Run Maester tests using Invoke-Maester
+    $testPath = switch ($category) {
+        "ConditionalAccess" { "ConditionalAccess" }
+        "SecurityDefaults" { "SecurityDefaults" }
+        "IdentityProtection" { "IdentityProtection" }
+        default { $null }
+    }
+    
+    # Invoke Maester tests
+    if ($testPath) {
+        $testResults = Invoke-Maester -Path $testPath -PassThru -Verbosity Minimal
+    } else {
+        # Run all tests if no specific category
+        $testResults = Invoke-Maester -PassThru -Verbosity Minimal
+    }
+    
+    # Disconnect from Graph
+    Disconnect-MgGraph | Out-Null
+    
+    # Parse results
+    $summary = @{
+        Category = $category
+        TotalTests = $testResults.TotalCount
+        PassedTests = $testResults.PassedCount
+        FailedTests = $testResults.FailedCount
+        SkippedTests = $testResults.SkippedCount
+        Duration = $testResults.Duration.TotalSeconds
+        Timestamp = (Get-Date).ToString("o")
+    }
+    
+    # Get failed test details
+    $failedTests = @()
+    if ($testResults.FailedCount -gt 0) {
+        $failedTests = $testResults.Tests | Where-Object { $_.Result -eq 'Failed' } | ForEach-Object {
+            @{
+                Name = $_.Name
+                ErrorMessage = $_.ErrorRecord.Exception.Message
+                Category = $category
+            }
+        }
+    }
+    
+    Write-Host "Completed: Passed=$($summary.PassedTests), Failed=$($summary.FailedTests)"
+    
+    return @{
+        Summary = $summary
+        FailedTests = $failedTests
+        Status = "Success"
+    }
+}
+catch {
+    Write-Error "Error in F2: $_"
+    
+    # Ensure disconnect even on error
+    try { Disconnect-MgGraph | Out-Null } catch {}
+    
+    return @{
+        Status = "Error"
+        Category = $Input.Category
+        ErrorMessage = $_.Exception.Message
+        StackTrace = $_.ScriptStackTrace
+    }
+}
