@@ -22,16 +22,43 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
-    # Optional: Install/Bundle modules for cold-start speed
-    # - name: Install required PowerShell modules (optional)
-    #   shell: pwsh
-    #   run: |
-    #     Save-Module -Name Maester,Microsoft.Graph.Authentication,Pester -Path ./modules -Force
+    # Bundle PowerShell modules to reduce cold-start time
+    - name: Prepare PowerShell modules
+      shell: pwsh
+      run: |
+        # Ensure modules directory exists
+        if (-not (Test-Path './modules')) {
+          New-Item -ItemType Directory -Path './modules' -Force
+        }
+        # Copy/ensure Maester module is available
+        if (Test-Path './modules/Maester') {
+          Write-Host "Maester module found"
+        }
 
-    # Archive your app including maester-tests for deployment
+    # Verify maester-tests exist before packaging
+    - name: Verify maester-tests
+      shell: pwsh
+      run: |
+        if (Test-Path './maester-tests') {
+          $testCount = (Get-ChildItem -Path './maester-tests' -Recurse -Filter '*.Tests.ps1').Count
+          Write-Host "Found $testCount test files"
+        } else {
+          Write-Error "maester-tests folder not found!"
+          exit 1
+        }
+
+    # Archive your app including required folders
     - name: Archive function app for deployment
       run: |
-        zip -r functionapp.zip . -x '*.git*'
+        zip -r functionapp.zip . \
+          -x '*.git*' \
+          '.github/*' \
+          'README.md' \
+          'create-allfiles.ps1' \
+          'profile.ps1' \
+          'Install-Maester.ps1' \
+          '.vscode/*' \
+          'TestResults/*'
 
     # Login to Azure
     - name: Azure Login
@@ -46,15 +73,14 @@ jobs:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: functionapp.zip
 
-    # Optionally update app settings (using Azure CLI or manually in portal/Key Vault)
-    # - name: Update Azure Function AppSettings
-    #   uses: azure/cli@v2
-    #   with:
-    #     inlineScript: |
-    #       az functionapp config appsettings set \
-    #         --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
-    #         --resource-group ${{ env.AZURE_FUNCTIONAPP_RG }} \
-    #         --settings "
-    #           KEY=VALUE
-    #           ...
-    #         "
+    # Update app settings if needed
+    - name: Update Azure Function AppSettings
+      uses: azure/cli@v2
+      with:
+        inlineScript: |
+          az functionapp config appsettings set \
+            --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
+            --resource-group ${{ env.AZURE_FUNCTIONAPP_RG }} \
+            --settings \
+              "ENABLE_MSDEPLOY=true" \
+              "SCM_DO_BUILD_DURING_DEPLOYMENT=false"
