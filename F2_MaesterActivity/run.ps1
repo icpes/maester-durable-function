@@ -139,6 +139,7 @@ catch {
         category = if ($category) { $category } else { "Unknown" }
         error = $_.Exception.Message
         stackTrace = $_.ScriptStackTrace
+        errorType   = $_.Exception.GetType().FullName
         timestamp = (Get-Date).ToString("o")
     }
 }
