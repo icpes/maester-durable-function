@@ -12,5 +12,5 @@
       "hubName": "MaesterTaskHub"
     }
   },
-  "functionTimeout": "00:10:00"
+  "functionTimeout": "00:30:00"
 }
